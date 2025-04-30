@@ -29,4 +29,22 @@
                 RC(1, 0) RC(1, 1) RC(1, 2)
         >;
     };
+
+    encoder_knob: encoder_knob {
+        compatible = "alps,ec11";
+        a-gpios = <PIN_A (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;          
+        b-gpios = <PIN_B (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <80>;                                /*changes depending on encoder*/
+        status = "disabled";
+    };
+
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&encoder_knob>;
+        triggers-per-rotation = <10>;            /*# of times behavior is triggered in 1 full rotation*/
+    };
+
+    &encoder_knob {
+        status = "okay";
+    };
 };
