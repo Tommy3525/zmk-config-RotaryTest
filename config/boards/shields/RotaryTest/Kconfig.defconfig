@@ -3,4 +3,4 @@ if SHIELD_ROTARYTEST
 config ZMK_KEYBOARD_NAME
     default "RotaryTest"
 
-end if
+endif
