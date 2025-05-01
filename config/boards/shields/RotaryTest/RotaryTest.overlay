@@ -35,16 +35,12 @@
         a-gpios = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;          
         b-gpios = <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
-        status = "disabled";
+        status = "okay";
     };
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&encoder_knob>;
         triggers-per-rotation = <10>;
-    };
-
-    &encoder_knob {
-        status = "okay";
     };
 };
