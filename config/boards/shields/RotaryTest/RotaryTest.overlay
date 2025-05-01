@@ -30,7 +30,7 @@
         >;
     };
 
-    encoder_knob: encoder_knob {
+    encoder_knob: knob_encoder {
         compatible = "alps,ec11";
         a-gpios = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;          
         b-gpios = <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
