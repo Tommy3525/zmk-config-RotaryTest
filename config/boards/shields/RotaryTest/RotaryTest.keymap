@@ -16,9 +16,9 @@
         default_layer {
             bindings = <
                 
-                &kp Q &kp W &kp E
+                &kp 1 &kp 2 &kp 3
                 
-                &kp U &kp I &kp O
+                &kp 4 &kp 5 &kp 6
 
             >;
             sensor-bindings = <&rotary C_VOL_UP C_VOL_DN>;
