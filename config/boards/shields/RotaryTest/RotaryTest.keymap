@@ -16,9 +16,9 @@
         default_layer {
             bindings = <
                 
-                &kp N1 &kp N2 &kp N3
+                &kp N1 &kp N2 &bootloader
                 
-                &kp N4 &kp N5 &kp N6
+                &kp N3 &kp N4 &bt BT_CLR
 
             >;
             sensor-bindings = <&rotary C_VOL_UP C_VOL_DN>;
