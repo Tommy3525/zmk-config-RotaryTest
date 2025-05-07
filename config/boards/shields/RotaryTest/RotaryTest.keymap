@@ -16,7 +16,7 @@
         default_layer {
             bindings = <
                 
-                &kp N1 &kp N2 &bootloader
+                &kp N1 &studio_unlock &bootloader
                 
                 &kp N3 &kp N4 &bt BT_CLR
 
