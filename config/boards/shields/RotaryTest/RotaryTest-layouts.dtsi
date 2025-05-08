@@ -15,6 +15,6 @@
 };
 
 &physical_layout0 {
-    kscan = <&kscan>;
-    transform = <&matrix_transform>;
+    kscan = <&default_kscan>;
+    transform = <&transform>;
 };
