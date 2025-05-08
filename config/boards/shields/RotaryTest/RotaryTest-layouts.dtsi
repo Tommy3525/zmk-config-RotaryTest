@@ -4,12 +4,12 @@
         display-name = "Default Layout";
 
         keys {
-            key-0 { matrix = <0 0>; };
-            key-1 { matrix = <0 1>; };
-            key-2 { matrix = <0 2>; };
-            key-3 { matrix = <1 0>; };
-            key-4 { matrix = <1 1>; };
-            key-5 { matrix = <1 2>; };
+            key-0 { matrix = <0 0>; position = <0 0 0>; };
+            key-1 { matrix = <0 1>; position = <1 0 0>; };
+            key-2 { matrix = <0 2>; position = <2 0 0>; };
+            key-3 { matrix = <1 0>; position = <0 1 0>; };
+            key-4 { matrix = <1 1>; position = <1 1 0>; };
+            key-5 { matrix = <1 2>; position = <2 1 0>; };
         };
     };
 };
