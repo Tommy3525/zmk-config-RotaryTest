@@ -5,61 +5,13 @@
         kscan = <&default_kscan>;
         transform = <&transform>;
 
-        keys {
-            key-0 {
-                width = <100>;
-                height = <100>;
-                row = <0>;
-                col = <0>;
-                rotate = <0>;
-                x = <0>;
-                y = <0>;
-            };
-            key-1 {
-                width = <100>;
-                height = <100>;
-                row = <0>;
-                col = <1>;
-                rotate = <0>;
-                x = <100>;
-                y = <0>;
-            };
-            key-2 {
-                width = <100>;
-                height = <100>;
-                row = <0>;
-                col = <2>;
-                rotate = <0>;
-                x = <200>;
-                y = <0>;
-            };
-            key-3 {
-                width = <100>;
-                height = <100>;
-                row = <1>;
-                col = <0>;
-                rotate = <0>;
-                x = <0>;
-                y = <100>;
-            };
-            key-4 {
-                width = <100>;
-                height = <100>;
-                row = <1>;
-                col = <1>;
-                rotate = <0>;
-                x = <100>;
-                y = <100>;
-            };
-            key-5 {
-                width = <100>;
-                height = <100>;
-                row = <1>;
-                col = <2>;
-                rotate = <0>;
-                x = <200>;
-                y = <100>;
-            };
-        };
+        keys keys  //               w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100  0    0       0     0     0>
+            , <&key_physical_attrs 100 100  100    0       0     0     0>
+            , <&key_physical_attrs 100 100  200    0       0     0     0>
+            , <&key_physical_attrs 100 100  0    100       0     0     0>
+            , <&key_physical_attrs 100 100  100    100       0     0     0>
+            , <&key_physical_attrs 100 100  200    100       0     0     0>
+            ;
     };
 };
