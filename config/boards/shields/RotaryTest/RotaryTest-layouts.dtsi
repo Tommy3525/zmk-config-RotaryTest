@@ -1,20 +1,20 @@
+#include <physical_layouts.dtsi>
+
 / {
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
+        kscan = <&default_kscan>;
+        transform = <&transform>;
+        
 
-        keys {
-            key-0 { matrix = <0 0>; position = <0 0 0>; };
-            key-1 { matrix = <0 1>; position = <1 0 0>; };
-            key-2 { matrix = <0 2>; position = <2 0 0>; };
-            key-3 { matrix = <1 0>; position = <0 1 0>; };
-            key-4 { matrix = <1 1>; position = <1 1 0>; };
-            key-5 { matrix = <1 2>; position = <2 1 0>; };
-        };
+        keys = 
+            <&key_physical_attrs 100 100 0 0 0 0 >,
+            <&key_physical_attrs 100 100 0 100 0 0 >,
+            <&key_physical_attrs 100 100 0 200 0 0 >,
+
+            <&key_physical_attrs 100 100 100 0 0 0 >,
+            <&key_physical_attrs 100 100 100 100 0 0 >,
+            <&key_physical_attrs 100 100 100 200 0 0 >;        
     };
-};
-
-&physical_layout0 {
-    kscan = <&default_kscan>;
-    transform = <&transform>;
 };
